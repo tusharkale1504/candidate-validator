@@ -29,7 +29,7 @@ const candidateRoutes = async (fastify: FastifyInstance) => {
   fastify.get("/candidates", getAllCandidateController);
 
   fastify.put(
-    "candidate/:id",
+    "/candidate/:id",
     {
       schema: {
         ...candidateIdParamSchema,
